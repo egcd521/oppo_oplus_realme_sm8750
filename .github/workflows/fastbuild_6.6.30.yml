@@ -9,6 +9,16 @@ env:
 on:
   workflow_dispatch:
     inputs:
+      ksu_type:
+        description: 'KernelSU分支(SukiSU Ultra/KernelSU Next/MKSU/KernelSU(原版),默认SukiSU Ultra)'
+        required: true
+        type: choice
+        default: 'sukisu'
+        options:
+          - 'sukisu'
+          - 'ksunext'
+          - 'mksu'
+          - 'ksu'
       sukisu_tag:
         description: "自定义版本来源后缀（如:见清）"
         required: false
