@@ -174,7 +174,7 @@ jobs:
 
       - name: Inject dynamic SukiSU string version
         run: |
-         cd kernel_workspace/kernel_platform
+         cd kernel_workspace
          curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/builtin/kernel/setup.sh" | bash -s builtin
          cd KernelSU
          # 自定义后缀（支持 emoji）
